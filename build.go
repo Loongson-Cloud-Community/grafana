@@ -290,6 +290,8 @@ func createRpmPackages() {
 		rpmPkgArch = "armhfp"
 	case pkgArch == "arm64":
 		rpmPkgArch = "aarch64"
+	case pkgArch == "loong64":
+		rpmPkgArch = "loongarch64"
 	}
 	createPackage(linuxPackageOptions{
 		packageType:            "rpm",
